@@ -1,8 +1,12 @@
-import express from "express";
-import { UsersControllers } from "@controllers/UsersController";
-const app = express();
+import express from 'express'
+import '@controllers/UsersController'
 
-app.get("/", (req, res) => {
-  return res.json({ msg: "Hello World" });
-});
-app.listen(5000);
+const app = express()
+
+app.get('/', (request, response) => {
+  return response.json({ message: 'Hello World' })
+})
+
+app.listen(3333,()=>{
+  console.log('Rodando')
+})

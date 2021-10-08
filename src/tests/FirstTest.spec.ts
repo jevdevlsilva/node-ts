@@ -1,4 +1,5 @@
-import { User } from "@models/User";
+import { User } from "@models/User"
+
 test("it should be okay", () => {
   const user = new User();
   (user.name = "JEfferson"), (user.email = "jeffersonleite95@gmail.com");
